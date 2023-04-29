@@ -19,7 +19,7 @@ sh "mvn clean compile"
         }
      stage('Archving') {
             steps {
-                archiveArtifacts '**/targets/*.jar'
+                archiveArtifacts '**/target/*.jar'
             }
         }   
     }
