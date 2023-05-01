@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout git') {
             steps {
-               git branch: 'master', url: 'https://github.com/logicopslab/java-web-app'
+               git branch: 'master', url: 'https://github.com/kumarkaranam1/jenkins-maven-project'
             }
         }
         
