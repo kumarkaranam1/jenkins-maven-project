@@ -20,16 +20,5 @@ pipeline {
                 }   
             }
         }
-        stage('SonarQube Analysis'){
-            steps{
-                   withSonarQubeEnv('sonarqube') {
-                        sh 'mvn clean verify sonar:sonar \
-                       -Dsonar.projectKey=devsecopsproject-key \
-                       -Dsonar.host.url=http://localhost:9000 \
-                       -Dsonar.login=sqp_9d412572fdfaa5ff74cb4f05b00443a6d2a6676e'
-
-                    }
-            }
-        }
-        }
     }
+}
